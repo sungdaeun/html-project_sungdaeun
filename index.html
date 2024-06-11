@@ -1,17 +1,89 @@
 <!DOCTYPE html>
-<html>
-
-  <P>dddd</P>
+<html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forment</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo_forment.svg" alt="Forment 로고">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">선물제안</a></li>
+                <li><a href="#">전 제품 보기</a></li>
+                <li><a href="#">프래그런스</a></li>
+                <li><a href="#">정기배송</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">CS 센터</a></li>
+                <li><a href="#">라이브</a></li>
+            </ul>
+            <div class="user-options">
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+                <a href="#">장바구니</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="product-display">
+            <div class="product-image">
+                <img src="main1.png" alt="Forment Perfumes">
+            </div>
+            <div class="product-details">
+                <h1>시그니처 퍼퓸</h1>
+                <p class="original-price">49,000원</p>
+                <p class="discounted-price">39,000원</p>
+                <p>가장 빛나는 순간을 위한 포맨트. 세계적인 조향사들이 그려낸 가장 편안하고 부드러운 향기로 내면의 자연스러움과 고유한 매력의 세계를 보여드립니다.</p>
+                <p>[50ml]</p>
+                <p>COTTON HUG</p>
+                <hr>
+                <p class="section-header">향 노트</p>
+                <hr>
+                <p class="section-header">배송 안내 / 쇼핑 팁</p>
+                <hr>
+                <form>
+                    <div class="form-row">
+                        <label for="collection">컬렉션 선택</label>
+                        <select id="collection" name="collection">
+                            <option value="1">옵션을 선택해 주세요</option>
+                            <option value="2">코튼컬렉션</option>
+                            <option value="3">내추럴컬렉션</option>
+                            <option value="4">레이어링 추천</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="scent">향 선택</label>
+                        <select id="scent" name="scent">
+                            <option value="1">옵션을 선택해 주세요</option>
+                            <option value="2">바질테라스</option>
+                            <option value="3">피그누아</option>
+                            <option value="4">상탈레인</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="options">옵션 선택</label>
+                        <select id="options" name="options">
+                            <option value="1">옵션을 선택해 주세요</option>
+                            <option value="2">선물포장</option>
+                        </select>
+                    </div>
+                </form>
+                <div class="price-info">
+                    <p class="total-price"><strong>39,000원</strong></p>
+                </div>
+                <div class="action-buttons">
+                    <button type="button" class="gift-button">선물하기로 이동</button>
+                    <button type="button" class="cart-button">장바구니로 이동</button>
+         
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- Footer content here -->
+    </footer>
 </body>
-
 </html>
