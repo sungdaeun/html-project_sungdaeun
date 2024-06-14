@@ -73,19 +73,19 @@ main {
 }
 
 .product-details h1 {
-  font-size: 2em;
+  font-size: 1.6em;
   margin-top: 0;
 }
 
 .product-details .original-price {
-  font-size: 1.2em;
+  font-size: 1em;
   color: #999;
   text-decoration: line-through;
 }
 
 .product-details .discounted-price {
-  font-size: 1.5em;
-  color: #e60000;
+  font-size: 1.2em;
+  color: #000000;
 }
 
 .product-details p {
@@ -180,16 +180,6 @@ form select {
   border: 1px solid #000;
 }
 
-.payment-info {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.payment-info p {
-  margin: 5px 0;
-  color: #333;
-  font-size: 0.9em;
-}
 
 .review-section {
   max-width: 1200px;
@@ -256,9 +246,6 @@ form select {
   margin-right: 0; /* 마지막 이미지에 오른쪽 마진 제거 */
 }
 
-.review-detail {
-  margin-bottom: 20px;
-}
 
 .detail-box {
   width: 100%;
@@ -267,22 +254,35 @@ form select {
   border-radius: 5px;
 }
 
-.review-more {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+/*See button */
+.detail-header {
+  position: relative;
 }
 
-.review-more button {
-  padding: 10px 20px;
-  border: 1px solid #ccc;
-  background: #fff;
-  border-radius: 5px;
-  cursor: pointer;
+
+
+.see-button {
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  height: 50px;
+  border: 0.3px solid black;
+  bottom: 2.5%;
+  left: 0%;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-.review-more button:hover {
-  background: #f0f0f0;
+.hide-button {
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  height: 50px;
+  border: 0.3px solid black;
+  bottom: 0%;
+  left: 0%;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .footer-content {
