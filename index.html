@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forment</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -39,51 +42,167 @@
                 <p class="discounted-price">39,000원</p>
                 <p>가장 빛나는 순간을 위한 포맨트. 세계적인 조향사들이 그려낸 가장 편안하고 부드러운 향기로 내면의 자연스러움과 고유한 매력의 세계를 보여드립니다.</p>
                 <p>[50ml]</p>
-                <p>COTTON HUG</p>
+                <details>
+                    <summary><b>COTTON HUG | </b></summary>
+                        <br>끌어안고 싶은 포근함, 공기 중에 퍼지는 뮤게의 깨끗함과 머스크의 부드러움.
+                        <br>COTTON KISS |
+                        <br>키스를 부르는 섹시함, 은은한 포근함 속 우디와 머스크의 조화.
+                        <br>COTTON SUCCESS |
+                        <br>새로운 시대를 여는 성공, 생자몽의 상쾌함과 코튼머스크의 부드러움.
+                        <br>COTTON MEMORY |
+                        <br>코랄 빛으로 물드는 설렘의 기억, 플로럴무드 속 살결같은 파우더리 향.
+                        <br>COTTON BREEZE |
+                        <br>향기가 실린 바람과 우연의 시작, 그늘 밑 불어오는 산들바람의 향.
+                        <br>COTTON DEAR NIGHT |
+                        <br>온기가 주는 포근한 위로, 핑크페퍼와 로즈의 환기가 담긴 센슈얼한 머스크 향.
+                        <br>COTTON DELIGHT BOUQUET |
+                        <br>생기 가득한 꽃내음이 주는 환희, 로즈와 프리지아 꽃잎이 내뿜는 향기.
+                        <br>VELVET HUG |
+                        <br>무의식 속 이끌린 시선에 남겨진 향, 이윽고 부드럽게 스며든 심장소리.
+                        <br>COTTON BATH |
+                        <br>방해할 수 없는 원초적인 공간에서 내뿜는 기분 좋은 순수함.
+                        <br>COTTON 366H |
+                        <br>존재하지 않는 날의 판타지
+                        <br>SANTAL RAIN |
+                        <br>젖은 대지 위 깊은 나무 내음의 역동적인 고요함.
+                        <br>FIG NOIR |
+                        <br>탐스럽게 익은 무화과 열매의 달콤함.
+                        <br>BASIL TERRACE |
+                        <br>싱그러운 유자 열매와 생기 넘치는 바질 잎이 주는 경쾌함.
+                    </p>
+                </details>
                 <hr>
                 <p class="section-header">향 노트</p>
+                <details><summary></summary><p>상세페이지 참고</p></details>
                 <hr>
                 <p class="section-header">배송 안내 / 쇼핑 팁</p>
+                <details><summary></summary>
+                <p>배송비: 3000원 (50,000원 이상 구매 시 무료)</p>
+                <p>평일 16시 이전 결제 완료시 당일출고</P>
+                <p>(주문량 폭주시 출고가 지연될 수 있습니다.)</p></details>
                 <hr>
                 <form>
                     <div class="form-row">
-                        <label for="collection">컬렉션 선택</label>
-                        <select id="collection" name="collection">
-                            <option value="1">옵션을 선택해 주세요</option>
-                            <option value="2">코튼컬렉션</option>
-                            <option value="3">내추럴컬렉션</option>
-                            <option value="4">레이어링 추천</option>
-                        </select>
-                    </div>
-                    <div class="form-row">
-                        <label for="scent">향 선택</label>
-                        <select id="scent" name="scent">
-                            <option value="1">옵션을 선택해 주세요</option>
-                            <option value="2">바질테라스</option>
-                            <option value="3">피그누아</option>
-                            <option value="4">상탈레인</option>
-                        </select>
-                    </div>
-                    <div class="form-row">
-                        <label for="options">옵션 선택</label>
-                        <select id="options" name="options">
-                            <option value="1">옵션을 선택해 주세요</option>
-                            <option value="2">선물포장</option>
-                        </select>
-                    </div>
-                </form>
-                <div class="price-info">
-                    <p class="total-price"><strong>39,000원</strong></p>
+                    <label for="collection">컬렉션 선택</label>
+                            <select id="collection" name="collection">
+                                <option value="1">옵션을 선택해 주세요</option>
+                                <option value="2">코튼컬렉션</option>
+                                <option value="3">내추럴컬렉션</option>
+                                <option value="4">레이어링 추천</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <label for="scent">향 선택</label>
+                            <select id="scent" name="scent">
+                                <option value="1">옵션을 선택해 주세요</option>
+                                <option value="2">바질테라스</option>
+                                <option value="3">피그누아</option>
+                                <option value="4">상탈레인</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <label for="options">옵션 선택</label>
+                            <select id="options" name="options">
+                                <option value="1">옵션을 선택해 주세요</option>
+                                <option value="2">선물포장</option>
+                                <option value="3">선택안함</option>
+                            </select>
+                        </div>
+                    </form>
+                    <div class="price-info">
+                        <p class="total-price">39,000원 </p>
                 </div>
                 <div class="action-buttons">
                     <button type="button" class="gift-button">선물하기로 이동</button>
                     <button type="button" class="cart-button">장바구니로 이동</button>
-         
+                </div>
+            </div>
+        </section>
+
+        <!-- 리뷰 섹션 추가 -->
+        <section class="review-section">
+            <div class="review-header">
+                <h2>REVIEW <span class="info-icon">ⓘ</span></h2>
+                <p>악의적인 비방글은 반드시 관리자에 의해 삭제될 수 있습니다.</p>
+            </div>
+            <div class="review-summary">
+                <span class="review-score">★ 4.8</span>
+                <span class="review-percentage"><span class="highlight">92.9%</span>의 구매자들이 이 상품을 좋아합니다.</span>
+            </div>
+            <div class="review-images">
+                <img src="reviwe1.jpg" alt="리뷰 이미지 1" class="reviweimage-box">
+                <img src="reviwe2.jpg" alt="리뷰 이미지 2" class="reviweimage-box">
+                <img src="reviwe3.jpg" alt="리뷰 이미지 3" class="reviweimage-box">
+                <img src="reviwe4.jpg" alt="리뷰 이미지 4" class="reviweimage-box">
+                <img src="reviwe5.jpg" alt="리뷰 이미지 5" class="reviweimage-box">
+                <img src="reviwe6.jpg" alt="리뷰 이미지 6" class="reviweimage-box">
+                <img src="reviwe7.jpg" alt="리뷰 이미지 7" class="reviweimage-box">
+                <img src="reviwe8.jpg" alt="리뷰 이미지 8" class="reviweimage-box">
+        </section>
+
+        <!-- 상세페이지 섹션 추가 -->
+        <section class="detail-section">
+            <div class="detail-header">
+                <h2>제품 상세 정보</h2>
+                <img src="detail1.jpg" alt="상세페이지1" class="detail-image">
+                <button class="see-button">더보기</button>
+                <button class="hide-button">가리기</button>
+                <img src="detail2.jpg" alt="상세페이지2" class="detail-image">
+                <img src="detail3.jpg" alt="상세페이지3" class="detail-image">
             </div>
         </section>
     </main>
+
+    <!-- 풋터 추가 -->
     <footer>
-        <!-- Footer content here -->
+        <div class="logo">
+            <img src="logo_forment.svg" alt="Forment 로고">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>주식회사 에이피알</p>
+                    <p>대표이사: 김병훈 / 서울특별시 송파구 올림픽로 300, 36층 (신천동, 롯데월드타워)</p>
+                    <p>사업자등록번호: 220-88-89441 [사업자정보확인]</p>
+                    <p>통신판매업신고: 제2020-서울송파-1274</p>
+                    <p>고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한 PG사의 구매안전서비스를 이용하실 수 있습니다.</p>
+                    <p>© APR all rights reserved. Hosted by CAFE24</p>
+                </div>
+                <div class="footer-center">
+                    <h3>개인정보처리방침</h3>
+                    <p>캠페인</p>
+                    <p>협업문의</p>
+                    <p>반품 및 환불 규정</p>
+                </div>
+                <div class="footer-right">
+                    <p>운영시간: 평일 09:00 - 18:00 (토, 일, 공휴일 휴무)</p>
+                    <p>점심시간: 평일 12:00 - 13:00</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com"><img src="facebook.JPG" alt="Facebook"></a>
+                        <a href="https://www.instagram.com"><img src="instagram.JPG" alt="Instagram"></a>
+                        <a href="https://www.youtube.com"><img src="youtube.JPG" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
     </footer>
+    <script>
+        $(document).ready((function () {    //페이지 로드후 벌어지는 이벤트
+            $(".detail-image").slice(1, 3).hide(); //class가 detail-image인 image를 1~3번째까지 숨김.
+            $(".hide-button").hide();             //페이지가 로드후 hide-button을 숨김
+            $(".see-button").click(function (e) { // class가 see-button인 요소를 클릭하면 실행되는 이벤트
+                $(".detail-image").slice(0, 3).show(); //class가 detail-image인 image를 0~3번째까지 보이게 해준다.
+                if ($(".detail-image:hidden").length == 0) { //class가 detail-image인 안보이는 이미지의 길이가 0일경우
+                    $(".hide-button").show();    //button class가 hide-button인 버튼을 보이게해준다.
+                    $(".see-button").hide();     //button class가 see-button인 버튼을 안보이게해준다.
+                }
+
+            });
+
+            $(".hide-button").click(function (e) {       // class가 hide-button인 요소를 클릭하면 실행되는 이벤트
+                $(".detail-image").slice(1, 3).hide();  //class가 detail-image인 image를 1~3번째까지 안보이게 해준다.
+                $(".see-button").show();                //button class가 see-button인 버튼을 보이게 해준다.
+                $(".hide-button").hide();                //button class가 hide-button인 버튼을 안보이게해준다.
+            });
+        }));
+    </script>
 </body>
+
 </html>
